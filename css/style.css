@@ -1,7 +1,15 @@
 * {
-   font-family: poppins;
+   font-family: "poppins", sans-serif;
+   color: #2f281e;
+   font-weight: normal;
    margin: 10px;
 }
+h1,
+h2,
+h3 {
+   font-weight: bold;
+}
+/*navigation*/
 .nav {
    display: flex;
    justify-content: space-between;
@@ -13,35 +21,97 @@
    justify-content: space-around;
    list-style: none;
 }
-.nav-button {
+.nav__button {
    display: flex;
    color: #ff9900;
 }
-.btn-signin {
+.btn--signin {
    background-color: #ffffff;
+   color: #173a56;
+   border-color: #bcd0e5;
    border-radius: 4px;
+   border: none; /*but wants to have frame*/
    width: 102px;
    height: 46px;
 }
-.btn-signup {
+.btn--signup {
    background-color: #ff9900;
+   color: #ffffff;
    border-radius: 4px;
+   border: none;
    width: 110px;
    height: 46px;
 }
+/*heading*/
 .header {
    display: flex;
+   align-items: center;
+   margin: 20px;
+}
+.header__text {
+   flex-direction: column;
 }
 .btn-GetStarted {
    background-color: #ff9900;
    color: #ffffff;
+   border: none;
+   font-weight: bold;
    width: 175px;
    height: 53px;
    border-radius: 4px;
 }
+/*icon*/
+.fa-play {
+   font-size: 20px;
+}
 .btn-WatchtheVideo {
    background-color: #ffffff;
    color: #ff9900;
-   width: 161px;
-   height: 23px;
+   border: none;
+   text-decoration-line: underline;
+}
+/*aside*/
+.aside {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 40px;
+}
+.aside-images {
+   display: flex;
+   margin: 20px;
+}
+.btn-signupnow {
+   background-color: #ff9900;
+   color: #ffffff;
+   font-weight: bold;
+   border: none;
+   width: 175px;
+   height: 53px;
+   border-radius: 4px;
+}
+/*main*/
+.mainA,
+.mainB,
+.mainC {
+   display: flex;
+   padding: 20px;
+   margin: 20px;
+}
+
+.fa-square-check {
+   font-size: 35px;
+}
+.footer {
+   display: flex;
+}
+.footer__menu {
+   list-style: none;
+}
+.footer__link {
+   display: flex;
+   flex-direction: column;
+}
+a {
+   text-decoration: none;
 }
