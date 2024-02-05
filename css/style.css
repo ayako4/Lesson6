@@ -1,0 +1,47 @@
+* {
+   font-family: poppins;
+   margin: 10px;
+}
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 10px;
+}
+.menu {
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+}
+.nav-button {
+   display: flex;
+   color: #ff9900;
+}
+.btn-signin {
+   background-color: #ffffff;
+   border-radius: 4px;
+   width: 102px;
+   height: 46px;
+}
+.btn-signup {
+   background-color: #ff9900;
+   border-radius: 4px;
+   width: 110px;
+   height: 46px;
+}
+.header {
+   display: flex;
+}
+.btn-GetStarted {
+   background-color: #ff9900;
+   color: #ffffff;
+   width: 175px;
+   height: 53px;
+   border-radius: 4px;
+}
+.btn-WatchtheVideo {
+   background-color: #ffffff;
+   color: #ff9900;
+   width: 161px;
+   height: 23px;
+}
