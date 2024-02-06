@@ -2,12 +2,14 @@
    font-family: "poppins", sans-serif;
    color: #2f281e;
    font-weight: normal;
+   line-height: 28px;
    margin: 10px;
 }
 h1,
 h2,
 h3 {
    font-weight: bold;
+   line-height: 35px;
 }
 /*navigation*/
 .nav {
@@ -16,23 +18,22 @@ h3 {
    align-items: center;
    margin: 10px;
 }
-.menu {
+.nav__menu {
    display: flex;
    justify-content: space-around;
    list-style: none;
-}
-.nav__button {
-   display: flex;
-   color: #ff9900;
 }
 .btn--signin {
    background-color: #ffffff;
    color: #173a56;
    border-color: #bcd0e5;
    border-radius: 4px;
-   border: none; /*but wants to have frame*/
+   /*border: none; but couldn't get rid of shadow*/
+   border-color: #bcd0e5;
    width: 102px;
    height: 46px;
+   /*to have scape between sign up button*/
+   margin-right: 14px;
 }
 .btn--signup {
    background-color: #ff9900;
@@ -51,7 +52,7 @@ h3 {
 .header__text {
    flex-direction: column;
 }
-.btn-GetStarted {
+.btn--GetStarted {
    background-color: #ff9900;
    color: #ffffff;
    border: none;
@@ -60,11 +61,11 @@ h3 {
    height: 53px;
    border-radius: 4px;
 }
-/*icon*/
+/*play icon*/
 .fa-play {
    font-size: 20px;
 }
-.btn-WatchtheVideo {
+.btn--WatchtheVideo {
    background-color: #ffffff;
    color: #ff9900;
    border: none;
@@ -77,11 +78,14 @@ h3 {
    align-items: center;
    margin: 40px;
 }
-.aside-images {
-   display: flex;
-   margin: 20px;
+.aside__title {
+   text-align: center;
 }
-.btn-signupnow {
+.aside__images {
+   display: flex;
+   margin: 54px 20px 34px 20px;
+}
+.btn--signupnow {
    background-color: #ff9900;
    color: #ffffff;
    font-weight: bold;
@@ -98,20 +102,56 @@ h3 {
    padding: 20px;
    margin: 20px;
 }
-
+.mainA__text,
+.mainB__text,
+.mainC__text {
+   text-align: justify;
+   /*to have space between sentences*/
+   margin-bottom: 30px;
+}
+/*check box icon from font awsome*/
+/*sentence comes under the checkbox and couldn't find out how to fix it*/
 .fa-square-check {
    font-size: 35px;
 }
+/*footer*/
+/*couldn't figure out how to keep the line menu and links. 
+links has more space between each other*/
 .footer {
    display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   position: relative;
+}
+.footer__img {
+   position: absolute;
+   top: 0;
+   left: 0;
 }
 .footer__menu {
    list-style: none;
+   margin-right: 50px;
 }
 .footer__link {
    display: flex;
    flex-direction: column;
+   margin-right: 50px;
+   margin-left: 50px;
 }
 a {
    text-decoration: none;
+}
+.footer__blanket {
+   display: flex;
+   flex-direction: column;
+}
+.footer__blanket-textbox {
+   /*again, I couldn't figure out how to off the box shadow*/
+   width: 325px;
+   height: 48px;
+   border-color: #bcd0e5;
+   border-radius: 4px;
+}
+.btn--signupnow {
+   margin-top: 21px;
 }

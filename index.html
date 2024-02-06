@@ -12,13 +12,13 @@
    <body>
       <nav class="nav">
          <img src="images/Logo.png" alt="logotype" width="185px" height="32px" />
-         <ul class="menu">
+         <ul class="nav__menu">
             <li>Product</li>
             <li>Customers</li>
             <li>Pricing</li>
             <li>Resources</li>
          </ul>
-         <div class="nav--button">
+         <div >
             <button class="btn--signin">Sign in</button>
             <button class="btn--signup">Sign up</button>
          </div>
@@ -30,22 +30,23 @@
                Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your
                next user experience.
             </p>
-            <button class="btn-GetStarted">Get Started</button>
-            <button class="btn-WatchtheVideo"><i class="fa-solid fa-play" style="color: #ff9900;"  ></i></i>Watch the Video</button>
+            <button class="btn--GetStarted">Get Started</button>
+            <button class="btn--WatchtheVideo"><i class="fa-solid fa-play" style="color: #ff9900;"  ></i></i>Watch the Video</button>
          </div>
          <div>
             <img src="images/Header.png" alt="Header-jumpingpeople" width="605px" height="496px" />
          </div>
       </header>
       <aside class="aside">
-         <h2>We design tools to unveil your superpowers</h2>
-         <div class="aside-images">
+         <h2 class="aside__title">We design tools to unveil <br> your superpowers</h2>
+         <div class="aside__images">
+            <!--I create four images instead of write code for each elements-->
             <img src="images/aside1.png" alt="First click tests" width="240px" height="170px" />
             <img src="images/aside2.png" alt="Design surveys" width="240px" height="170px" />
             <img src="images/aside3.png" alt="Preference tests" width="240px" height="170px" />
             <img src="images/aside4.png" alt="Five second tests" width="240px" height="204px" />
          </div>
-         <button class="btn-signupnow">SIGN UP NOW</button>
+         <button class="btn--signupnow">SIGN UP NOW</button>
       </aside>
       <main>
          <article class="mainA">
@@ -70,12 +71,12 @@
                </section>
             </div>
             <div class="mainA__image">
-               <img src="images/main1.png" alt="a guy with red T-shirt" width="620px" height="573px" />
+               <img src="images/main1.png" alt="a guy with red T-shirt" width="520px" height="574px" />
             </div>
          </article>
           <article class="mainB">
              <div class="mainB__image">
-               <img src="images/main2.png" alt="a guy with blue T-shirt" width="620px" height="573px" />
+               <img src="images/main2.png" alt="a guy with blue T-shirt" width="535px" height="521px" />
             </div>
             <div class="mainB__text">
                <h4>Easier decision making for</h4>
@@ -115,7 +116,9 @@
          </article>
       </main>
       <footer class="footer">
-        <img src="images/Logo.png" alt="logotype" width="185px" height="32px" />
+         <div class="footer__img">
+           <img   src="images/Logo.png" alt="logotype" width="185px" height="32px" />
+         </div>
          <nav>
             <ul class="footer__menu">
                 <li>Product</li>
@@ -130,7 +133,10 @@
             <a href="#" >Privacy Policy</a>  
             <a href="#" >Terms of Service</a>       
          </div>
-         <button></button>
+         <div class="footer__blanket">
+            <input class="footer__blanket-textbox" type="text" name="text" >
+            <button class="btn--signupnow">Sign up Now</button>
+         </div>
       </footer>
    </body>
 </html>
